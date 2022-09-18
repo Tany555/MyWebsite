@@ -1,0 +1,178 @@
+/* CARDS */
+.cardsx {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	text-align: center;
+}
+
+.cardx {
+	background: rgb(255, 221, 131);
+	width: 30.332%;
+	margin: 10px;
+	padding: 10px;
+	height: auto;
+	min-height: 100px;
+	display: grid;
+	grid-template-rows: 20px 50px 1fr 50px;
+	border-radius: 10px;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+	transition: all 0.2s;
+}
+
+/* for 2nd banner */
+.cardx2 {
+	width: 20%;
+	margin: 10px;
+	padding: 10px;
+	height: auto;
+	min-height: 100px;
+	display: grid;
+	grid-template-rows: 20px 50px 1fr 50px;
+	border-radius: 10px;
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+	transition: all 0.2s;
+}
+
+.cardx:hover {
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+	transform: scale(1.01);
+}
+/* CARD BACKGROUNDS */
+.card-1x {
+	background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2x {
+	background: #C3F8FF;
+	border: dashed;
+	border-color: rgb(255, 233, 150);
+}
+
+.card-3x {
+	background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4x {
+	background: rgb(255, 233, 150);
+}
+
+.card-5x {
+	background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+/*start  services css styling // use  */
+.col-md-3 {
+	width:20%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    float:left;
+    text-align: center !important;
+}
+.gapcol {
+	padding: 0px 7px !important;
+}
+
+.servicessdiv {
+	background-color: #fff;
+}
+
+.servicescover {
+	width: 100%;
+	height: auto;
+	text-align: center !important;
+	float: left;
+	display: block;	
+    
+	
+}
+
+.service {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 1px;
+	padding-top: 25px;
+	padding-bottom: 12px;
+	color: #119ee7;
+	float: left;
+	width: 100%;
+}
+
+.service::after {
+	position: absolute;
+	left: 47.6%;
+	z-index: 0;
+	content: " ";
+	width: 150px;
+	height: 2px;
+	margin-left: -45px;
+	margin-top: 50px;
+	background: rgb(255,235,182);
+}
+
+
+.serviceitem {
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	margin: 30px 20px;
+	float: left;
+	display: block;
+	background-color: #ffffff;
+	border-radius: 10%;
+	border: 1px solid rgb(255,235,182);
+	
+}
+
+.serviceitem img {
+	height: 100px;
+	object-fit: scale-down;
+}
+
+.serviceitem p {
+	text-align: center;
+	font-size: 17px;
+	margin-bottom: 5px;
+	line-height: 25px;
+	height: 128px;
+	overflow: hidden;
+}
+
+.serviceitem  h3 {
+	font-size: 19px;
+	margin-bottom: 21px;
+	margin-top: 0px;
+}
+
+.serviceitem .viewmore a {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0px auto;
+	border: 1px solid #119ee7;
+	border-radius: 5px;
+	color: #333;
+	padding: 10px 15px;
+	font-size: 17px;
+	color: #fff;
+	background-color: #119ee7;
+}
+
+.serviceitem .viewmore a:hover {
+	color: #119ee7;
+	background-color: #fff;
+}
+
+.col-md-offset-2{margin-left:16.66666667%}
+
+.raised-block {
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 3rem; 
+    }
+    
+    /*end  services css styling // use  */
