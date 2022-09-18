@@ -2,10 +2,10 @@
 @font-face {
 	font-family: 'PTSans';
 	src: url('fonts/PT-Sans.eot');
-    src: url('fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PT-Sans.woff') format('woff'),
-         url('fonts/PT-Sans.ttf') format('truetype'),
-         url('fonts/PT-Sans.svg#pt_sansregular') format('svg');
+	src: url('fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PT-Sans.woff') format('woff'), url('fonts/PT-Sans.ttf')
+		format('truetype'), url('fonts/PT-Sans.svg#pt_sansregular')
+		format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -13,10 +13,10 @@
 @font-face {
 	font-family: 'PTSans';
 	src: url('fonts/PT-Sans-Bold.eot');
-    src: url('fonts/PPT-Sans-Bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PT-Sans-Bold.woff') format('woff'),
-         url('fonts/PT-Sans-Bold.ttf') format('truetype'),
-         url('fonts/PT-Sans-Bold.svg#pt_sansbold') format('svg');
+	src: url('fonts/PPT-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PT-Sans-Bold.woff') format('woff'),
+		url('fonts/PT-Sans-Bold.ttf') format('truetype'),
+		url('fonts/PT-Sans-Bold.svg#pt_sansbold') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
@@ -24,10 +24,10 @@
 @font-face {
 	font-family: 'PTSans';
 	src: url('fonts/PT-Sans-Italic.eot');
-    src: url('fonts/PPT-Sans-Italic.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PT-Sans-Italic.woff') format('woff'),
-         url('fonts/PT-Sans-Italic.ttf') format('truetype'),
-         url('fonts/PT-Sans-Italic.svg#pt_sansitalic') format('svg');
+	src: url('fonts/PPT-Sans-Italic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/PT-Sans-Italic.woff') format('woff'),
+		url('fonts/PT-Sans-Italic.ttf') format('truetype'),
+		url('fonts/PT-Sans-Italic.svg#pt_sansitalic') format('svg');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -35,49 +35,74 @@
 @font-face {
 	font-family: 'PTSans';
 	src: url('fonts/PT-Sans-BoldItalic.eot');
-    src: url('fonts/PPT-Sans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-         url('fonts/PT-Sans-BoldItalic.woff') format('woff'),
-         url('fonts/PT-Sans-BoldItalic.ttf') format('truetype'),
-         url('fonts/PT-Sans-BoldItalic.svg#pt_sansbold_italic') format('svg');
+	src: url('fonts/PPT-Sans-BoldItalic.eot?#iefix')
+		format('embedded-opentype'), url('fonts/PT-Sans-BoldItalic.woff')
+		format('woff'), url('fonts/PT-Sans-BoldItalic.ttf') format('truetype'),
+		url('fonts/PT-Sans-BoldItalic.svg#pt_sansbold_italic') format('svg');
 	font-weight: bold;
 	font-style: italic;
 }
 
 /*  <<<<< Custom Fonts <<<<< */
-
-html{
+html {
 	line-height: 1.7;
 }
 
-body{
+body {
 	font-family: 'PTSans', Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
+
 .section {
 	padding-right: 20px;
 }
 
 .container {
-	max-width:100%;
+	max-width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	
 }
+
+
+
 .logo {
 	max-width: 25%;
 	height: auto;
 	float: left;
 	margin-bottom: 5px;
 	margin-left: 35px;
-	
 }
 
+@media screen and (max-width: 415px){
+	
+	.logo{
+	max-width: 118%;
+	background: #74baba;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	}
+	
+}
 
 header {
 	max-width: 100%;
 	padding-top: 6px;
-	color: #FFF;box-shadow: 4px  4px 17px rgba(0.55, 0, 0, 0.55);
+	color: #FFF;
+	box-shadow: 4px 4px 17px rgba(0.55, 0, 0, 0.55);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: white;
+	padding-bottom: 5px;
+}
+
+@media screen and (max-width: 415px){
+	
+	header{
+	padding-top: 0px;
+	}
 	
 }
 
@@ -95,13 +120,22 @@ header p {
 /* Site Navigation */
 .site-nav {
 	margin-top: 0px;
+}
+
+@media screen and (max-width: 415px){
+	
+	.site-nav{
+	position: fixed;
+	bottom: 1px;
+	background: #00b7b7;
+	padding: 3px;
+	}
 	
 }
 
 .site-nav ul {
 	margin: 0;
 	padding: 0;
-	
 }
 
 .site-nav li {
@@ -114,17 +148,284 @@ header p {
 .site-nav a {
 	display: block;
 	color: #000000;
-	padding: 15px 15px;
-	font-size: 17px;	
-	border-right:2px solid red;
+	padding: 15px 10px;
+	font-size: 100%;
+	border-width: 0 .25px 0 0;
+	border-image: linear-gradient(70deg, black 60%, white 100%);
+	border-image-slice: 2;
+	border-style: solid;
+}
+
+@media screen and (max-width: 415px){
 	
+	.site-nav a{
+	background:  #FFDA7A;	
+	text-align: center;
+	margin: 2px;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 5px;
+	text-decoration: none;
+	border-image: none;
+	box-shadow: 4px 4px 17px rgba(0.55, 0, 0, 0.55);
+	border-radius: 15px;
+	}
+	
+	.hide-small {
+		display: none;
+	}
 	
 }
-	
+
 .site-nav a:hover {
-	color: blue;
+	color: #004080;
 	font-weight: bold;
 }
 
+@media screen and (max-width: 415px){
+	
+	.site-nav li{
+	width: 33.332%;
+	margin-right: 0px;
+	}
+	
+}
+
+.sidebar {
+	color: #999;
+	font-size: 85%;
+	margin-top: 100px;
+}
+
+.sidebar h3 {
+	font-size: 138.5%;
+	margin-bottom: 7px;
+}
+
+footer {
+	text-align: center;
+	font-size: 85%;
+	color: #000000;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/* >>>>> caret design >>>>> */
+.caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border: 6px solid transparent;
+}
+
+.caret.down {
+	border-top-color: black;
+	text-align: center;
+}
+
+@media screen and (max-width: 415px){
+	
+	.caret,
+	.down{
+	border: 0px solid transparent;
+	}
+	
+}
+
+.caret.right {
+	border-left-color: black;
+}
+
+.caret.up {
+	border-bottom-color: black;
+}
+
+.caret.left {
+	border-right-color: black;
+}
+
+/* <<<<< caret design <<<<< */
+
+/* >>>>> Main body area >>>>> */
+.banner1 {
+	display:block;
+	width: 100%;
+	height: 350px;
+	background: rgb(255,235,182);
+	margin-top: 65px;
+	
+	
+}
+
+.banner1 h2 {
+	display: block;
+	font-size: 30px;
+	line-height: .5;
+	text-align: center;
+	padding: 20px;	
+	text-shadow: 5px 2px 5px grey;
+}
+
+.banner1 p {
+	padding: 0px;
+	margin: 0px;
+	text-shadow: 5px 2px 5px grey;
+	font-size: 20px;
+}
+
+.banner1  a{	
+	width: 50%;
+	height: 30%;
+	background: white;
+	border-radius:15px;
+	margin-top: 30px;
+	margin-left: 20%;
+	text-decoration: none;
+	font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.banner1  a:hover{
+	box-shadow: 4px 4px 17px rgba(0.55, 0, 0, 0.55); 
+}
+
+.banner2 {
+	position: relative;
+	display:block;
+	width: 100%;
+	height: 350px;
+	
+	margin-top: 5px;
+	
+	
+}
+
+.banner2 h2 {
+	display: block;
+	font-size: 30px;
+	line-height: .5;
+	text-align: center;
+	padding: 20px;	
+	text-shadow: 1px 2px 1px grey;
+	text-decoration: underline;
+	color: #8080ff;
+}
+
+.banner2 p {
+	display:block;
+	padding: 3px;
+	margin: 2px;
+	text-shadow: 5px 2px 5px grey;
+	font-size: 15px;
+}
+	
+.banner2  a{
+	position: relative;
+	background: white;
+	border-radius:15px;
+	text-decoration: none;
+	font-weight: bold;
+    padding: 12px 16px;
+}
+
+.banner2  a:hover{
+	box-shadow: 4px 4px 17px rgba(0.55, 0, 0, 0.55); 
+}
+
+.banner {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	text-shadow: gray;
+	background: #6bdada;
+	margin-top: 20px;
+	margin-left: 50%;
+}
+
+.banner h1 {
+	padding: 50px;
+	color: #69e099;
+	font-size: 45px;
+	text-shadow: 5px 2px 5px grey;
+}
+
+.banner p {
+	color: black;
+	font-size: 40px;
+	text-shadow: 5px 2px 5px grey;
+	margin-top: -25px;
+	padding: 50px;
+}
+
+.banner img {
+	width: 100px;
+	margin-left: 0px;
+}
+
+.bluebanner {
+	width: 100;
+	background: aqua;
+}
+
+/* Grid */
+.row {
+	margin-right: 5px;
+}
+
+.cold {
+	width: 100%;
+	padding-right: 20px;
+	box-sizing: border-box;
+	margin-left: 50px;
+}
+
+.col {
+	width: 100%;
+	padding-right: 20px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.col-md-11 {
+	width: 91.662%
+}
+
+.col-md-10 {
+	width: 83.332%;
+}
+
+.col-md-9 {
+	width: 75%;
+}
+
+.col-md-8 {
+	width: 66.662%;
+}
+
+.col-md-7 {
+	width: 58.331%
+}
+
+.col-md-6 {
+	width: 50%;
+}
+
+.col-md-5 {
+	width: 41.662%
+}
+
+.col-md-4 {
+	width: 33.332%;
+}
 
 
+
+.col-md-2 {
+	width: 16.662%;
+}
+
+.col-md-1 {
+	width: 8.332%;
+}
