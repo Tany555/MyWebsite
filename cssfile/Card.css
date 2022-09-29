@@ -9,14 +9,6 @@
 
 .cardx {
 	background: rgb(255, 221, 131);
-	width: 30.332%;
-	margin: 10px;
-	padding: 10px;
-	height: auto;
-	min-height: 100px;
-	display: grid;
-	grid-template-rows: 20px 50px 1fr 50px;
-	border-radius: 10px;
 	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
 	transition: all 0.2s;
 }
@@ -55,7 +47,8 @@
 }
 
 .card-4x {
-	background: rgb(255, 233, 150);
+	text-align: center;
+	background:  rgb(255, 233, 150);
 }
 
 .card-5x {
@@ -63,6 +56,7 @@
 }
 
 /*start  services css styling // use  */
+
 .col-md-3 {
 	width:20%;
     min-height:1px;
@@ -77,6 +71,10 @@
 
 .servicessdiv {
 	background-color: #fff;
+	position: inherit;
+	display:block;
+	margin-right: 1px;
+	margin-top: 5px;
 }
 
 .servicescover {
@@ -94,11 +92,13 @@
 	font-weight: bold;
 	margin-bottom: 1px;
 	padding-top: 25px;
-	padding-bottom: 12px;
+	padding-bottom: 5px;
 	color: #119ee7;
 	float: left;
 	width: 100%;
 }
+
+
 
 .service::after {
 	position: absolute;
@@ -117,13 +117,12 @@
 	width: 100%;
 	height: auto;
 	padding: 15px;
-	margin: 30px 20px;
 	float: left;
 	display: block;
 	background-color: #ffffff;
 	border-radius: 10%;
 	border: 1px solid rgb(255,235,182);
-	
+	margin-bottom: 5px;
 }
 
 .serviceitem img {
@@ -169,10 +168,12 @@
 .col-md-offset-2{margin-left:16.66666667%}
 
 .raised-block {
-    background-color: #fff;
     margin-bottom: 10px;
     margin-left: 0;
     margin-right: 3rem; 
     }
     
     /*end  services css styling // use  */
+    
+    
+  
