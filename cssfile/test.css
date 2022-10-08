@@ -1338,7 +1338,6 @@ ul.office-detail li i {
 }
 
 #blogpage-section b, strong {
-	color: #57cbcc;
 	font-weight: 800
 }
 
@@ -3060,7 +3059,7 @@ ul.office-detail li i {
 }
 
 #blogpage-section b, strong {
-	color: #57cbcc;
+	
 	font-weight: 800
 }
 
@@ -3441,3 +3440,171 @@ ul.pdf-link li a {
 	text-align: left;
 	color: #808080
 }
+
+/**************************************/
+
+
+
+.deneb_cta .cta_wrapper {
+    padding: 45px 50px 42px;
+    max-width: 850px;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: -135px;
+    position: relative;
+    background-image: -moz-linear-gradient(0deg, #ffbd27 0, #feb000 100%);
+    background-image: -webkit-linear-gradient(0deg, #ffbd27 0, #feb000 100%);
+    background-image: -ms-linear-gradient(0deg, #ffbd27 0, #feb000 100%);
+    box-shadow: 2.5px 4.33px 15px 0 rgba(254, 176, 0, .4);
+    z-index: 1;
+}
+
+.deneb_cta .cta_wrapper:after {
+    content: '';
+    background: url("../image/cta_shape.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1
+}
+
+.deneb_cta .cta_wrapper .cta_content h3 {
+    color: #fff;
+    font-weight: 700
+}
+
+
+.deneb_cta .cta_wrapper .cta_content h3:after {
+    content: '';
+    display: block;
+    max-width: 80px;
+    height: 2px;
+    margin-top: 13px;
+    margin-bottom: 90px
+}
+
+.deneb_cta .cta_wrapper .cta_content p {
+    color: #fff
+}
+
+.deneb_cta .cta_wrapper .button_box {
+    float: right
+}
+
+
+/* Start paragraph design */
+
+.paratitle{	
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #400080;
+	width: 100%;
+	text-align:  center;
+}
+
+
+ /* Start Flex servicing */
+    
+    .para-container {
+  max-width: 1400px;
+  margin: 40px 20px 0 20px;
+}
+
+.para-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 96%;
+}
+
+
+
+
+    /* End Flex servicing */
+    
+    
+
+/* End paragraph design */
+
+
+  /* Start Flex pricing */
+    
+    .call-outs-pricing {
+  max-width: 1400px;
+  margin: 40px 20px 0 20px;
+}
+
+.call-pricing {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 23%;
+}
+
+@media (min-width: 1024px) {
+  .call-outs-pricing {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .call-outs-pricing {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .call-pricing {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .call-outs-pricing {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .call-pricing {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 46%;
+}
+}
+
+@media (max-width: 425px) {
+  .call-outs-pricing {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .call-pricing {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 98%;
+}
+}
+
+
+
+
+.call-pricing:nth-child(1) {background-color: #c0dbe2;}
+.call-pricing:nth-child(2) {background-color: #cdf1c3;}
+.call-pricing:nth-child(3) {background-color: #ccb9da;}
+.call-pricing:nth-child(4) {background-color: #c0dbe2;}
+.call-pricing:nth-child(5) {background-color: #cdf1c3;}
+.call-pricing:nth-child(6) {background-color: #ccb9da;}
+.call-pricing:nth-child(7) {background-color: #c0dbe2;}
+.call-pricing:nth-child(8) {background-color: #cdf1c3;}
+    /* End Flex pricing */
