@@ -76,7 +76,6 @@ header {
 
 .padding20 {
 	display: block;
-	padding : 20px;
 	
 	
 }
@@ -84,16 +83,14 @@ header {
  .container {	
 	width: 100%;
 	overflow: hidden;
-	text-align: center;
+	text-align: center;	
+	margin: 0;
+	padding: 0;
 } 
 
 
 
-
-.content-area {
-	background-color: #FFF;
-	
-	
+.content-area {	
 	margin-top: 85px;
 }
 
@@ -241,10 +238,12 @@ header p {
 .sidebar {
 	color: #999;
 	font-size: 85%;
-	margin-top: 100px;
+	margin-top: 10px;
+	text-align: justify;
 }
 
 .sidebar h3 {
+	text-align:center;
 	font-size: 138.5%;
 	margin-bottom: 7px;
 }
@@ -411,16 +410,59 @@ footer {
 	margin-left: 0px;
 }
 
-.bluebanner {
-	width: 100;
-	background: aqua;
-}
 
 .bannerlayout{
-	max-width: 1300px;
-  background-color: #FFF;
-  margin: 20px auto 0 auto;
   line-height: 1.65;
   padding: 20px 20px;
   display: flex;
 }
+
+/* Start paragraph design */
+
+.paratitle{	
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #400080;
+	width: 100%;
+	text-align:  center;
+}
+
+
+ /* Start Flex servicing */
+    
+    .para-container {
+  max-width: 1400px;
+  margin: 40px 20px 0 20px;
+}
+
+.para-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 96%;
+}
+
+
+
+
+    /* End Flex servicing */
+    
+    
+
+/* End paragraph design */
+
+/* Start map container */
+.mapcontainer{
+	width: 100%;
+}
+
+
+iframe {
+	width: 100%;
+	height: 400px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); 
+}
+
+/* End map container */
