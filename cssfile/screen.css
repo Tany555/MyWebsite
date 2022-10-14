@@ -46,7 +46,7 @@
 /*  <<<<< Custom Fonts <<<<< */
 html {
 	line-height: 1.7;
-	background: white;
+	background: rgb(248, 249, 251);
 	
 }
 
@@ -60,14 +60,17 @@ body {
 
 header {
 	width: 100%;
-	display: block;	
-	position: fixed;
-	margin-top: 0px;
-	min-height: 75px;
-	box-shadow: 4px 4px 17px rgba(0.55, 0, 0, 0.55);
-    background-color: #ffffff;
-    top: 0;
 }
+
+.top_nav_container.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 337;
+    box-shadow: 2.5px 4.33px 15px 0 rgba(0, 0, 0, .15)
+    }
 
 .section {
 	padding-left: 40px;
@@ -86,12 +89,17 @@ header {
 	text-align: center;	
 	margin: 0;
 	padding: 0;
+	
 } 
 
 
 
 .content-area {	
 	margin-top: 85px;
+}
+
+ ul {  
+	list-style-type: none;
 }
 
 /* Start top container design*/
@@ -250,10 +258,12 @@ header p {
 
 footer {
 	text-align: center;
-	font-size: 85%;
-	color: #000000;
-	padding-bottom: 20px;
-	padding-top: 20px;
+	color: #ffffff;
+	padding-bottom: 40px;
+	/* padding-top: 20px; */
+	background: #272727;	
+	font-weight: lighter;
+	font-size: 80%;
 }
 
 /* >>>>> caret design >>>>> */
@@ -435,6 +445,7 @@ footer {
     .para-container {
   max-width: 1400px;
   margin: 40px 20px 0 20px;
+  display: flex;
 }
 
 .para-out {
@@ -466,3 +477,51 @@ iframe {
 }
 
 /* End map container */
+
+/* Start Footer menu container */
+
+.footermenu{
+	width: 100%;
+	color: white;	
+	font-weight: lighter;
+	font-size: 80%;
+	background: #3e3e3e;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	
+}
+
+.footermenuitem{
+	border-right: 1px;
+	border-right-color: black;
+	border-right-style: groove;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+@media (max-width: 425px) {
+	.footermenuitem{
+	border: none;
+}
+}
+
+.fmenutitle{
+	text-align: center;
+	font-size: 16px;
+}
+
+
+
+.footermenu .call-out a { 
+	font-size: 13px;
+	color: #b4b4b4;
+	text-decoration: none;
+	background: url("../image/arrow.png") no-repeat 0px;
+	padding: 0 0 0 13px;
+}
+
+.footermenu .call-out a:hover {  
+	
+	color: #f4f4f4;
+}
