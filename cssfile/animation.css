@@ -32,6 +32,37 @@ letter-spacing
 
 /*>>>>> Text spacing animation >>>>>>*/
 
+/* Mobile top */ 
+
+@media screen and (max-width: 490px) {
+	#textmobtop {
+	font-weight: 200;
+	opacity: 1;
+	animation: animate 5s ease-out forwards infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate { 0%{
+	letter-spacing: 5px;
+}
+
+20%
+{
+letter-spacing
+:
+1px;
+}
+100%
+{
+letter-spacing
+:
+5px;
+}
+}
+}
+
+
+
 /*>>>>>Start pricing table >>>>>>*/
 
 .pricingcontainer{
