@@ -141,10 +141,10 @@ header {
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 350px){
 	
 	.logo{
-	max-width: 118%;
+	max-width: 100%;
 	background: #74baba;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -152,11 +152,19 @@ header {
 	
 }
 
+.hide-larg {
+		display: none;
+	}
+	
+
 
 @media screen and (max-width: 415px){
 	
 	header{
 	padding-top: 0px;
+	}
+	.hide-larg {
+		display: unset;
 	}
 	
 }
@@ -180,6 +188,7 @@ header p {
 @media screen and (max-width: 415px){
 	
 	.site-nav{
+	width: 100%;
 	display: block;
 	position: fixed;
 	bottom: 1px;
@@ -246,6 +255,13 @@ header p {
 	}
 	
 }
+
+.textformobtop{
+	
+	text-decoration: underline;
+	color: #7a7a7a;
+
+	}
 
 .sidebar {
 	color: #999;
