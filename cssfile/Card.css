@@ -131,7 +131,7 @@
 	border-radius: 10%;
 	/* border: 1px solid rgb(255,235,182); */
 	margin-bottom: 20px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -186,6 +186,12 @@
     
     /*end  services css styling // use  */
     
+   
+   
+   
+   
+   
+   
     
     
     /* Start Flex servicing */
@@ -202,73 +208,180 @@
   flex-basis: 23%;
 }
 
-@media (min-width: 1024px) {
+/* start pixel break point for 1024*/
+@media (min-width: 1200px) {
   .call-outs-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .address .call-out {
+  
+  
+  .call-out-100{
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  text-align: left;
+  }
+  
+  .call-out-50 {
 	
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 48%;
   text-align: left;
-  padding-left: 150px;
   
 }
+  
+  .call-out-33{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 33%;
+  text-align: center;
+  }
+  
+  .call-out-25{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 25%;
+  text-align: left;
+  }  
+ 
 }
+/* end pixel break point for 1024*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* start pixel break point for 768 to 1024*/
+@media (min-width: 650px) and (max-width: 1200px) {
   .call-outs-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  
+   .call-out-100{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  text-align: left;
+  }
+  
+   .call-out-50{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+  text-align: left;
+  }
+  
+  .call-out-33{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 33%;
+  text-align: left;
+  }
+  
+  .call-out-25{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 25%;
+  text-align: left;
+  }
+  
+ 
+  
   .call-out {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 30%;
 }
-.address .call-out {
-	
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  flex-basis: 48%;
-  text-align: left;
-  
-}
-}
 
-@media (min-width: 425px) and (max-width: 768px) {
+}
+/* end pixel break point for 768 to 1024*/
+
+/* start pixel break point for 425 to 768*/
+@media (min-width: 425px) and (max-width: 650px) {
   .call-outs-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  
+   .call-out-100{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  text-align: left;
+  }
+  
+   .call-out-50{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+  text-align: left;
+  }
+  
+  .call-out-33{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 33%;
+  text-align: left;
+  }
+  
+  .call-out-25{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 25%;
+  text-align: left;
+  }
+  
   .call-out {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 46%;
 }
-.address .call-out {
-	
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  flex-basis: 48%;
-  text-align: left;
-  
-}
-}
 
+}
+/* end pixel break point for 425 to 768*/
+
+/* start pixel break point for =<425 */
 @media (max-width: 425px) {
   .call-outs-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  
+  .call-mob-100{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  text-align: left;
+  }
+  
+   .call-mob-50{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+  text-align: left;
+  }
+  
+  .call-mob-33{
+   box-sizing: border-box;
+  flex-basis: 50%;
+  text-align: left;
+ 
+  
+  }
+  
+  .call-mob-25{
+   box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 25%;
+  text-align: left;
+  }
+  
   .call-out {
   padding: 20px;
   box-sizing: border-box;
@@ -285,7 +398,7 @@
 	
 }
 }
-
+/* end pixel break point for =<425 */
 
 
 
