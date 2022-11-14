@@ -132,6 +132,7 @@
 	/* border: 1px solid rgb(255,235,182); */
 	margin-bottom: 20px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    margin: 10px;
 }
 
 
@@ -351,6 +352,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0;
   }
   
   .call-mob-100{
