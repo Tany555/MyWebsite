@@ -45,6 +45,7 @@
 
 /*  <<<<< Custom Fonts <<<<< */
 html {
+	width: 100%;
 	line-height: 1.7;
 	background: rgb(248, 249, 251);
 	margin: 0;
@@ -191,9 +192,8 @@ header p {
 	width: 100%;
 	display: block;
 	position: fixed;
-	bottom: 1px;
-	background: #00b7b7;
-	padding: 3px;
+	bottom: 0px;
+	background:  rgb(248, 249, 251);
 	}
 	
 }
@@ -224,7 +224,7 @@ header p {
 @media screen and (max-width: 415px){
 	
 	.site-nav a{
-	background:  #FFDA7A;	
+	background:  white;	
 	text-align: center;
 	margin: 2px;
 	font-weight: bold;
@@ -257,10 +257,10 @@ header p {
 }
 
 .textformobtop{
-	
+	font-size: 120%;
 	text-decoration: underline;
 	color: #7a7a7a;
-
+	
 	}
 
 .sidebar {
@@ -484,7 +484,7 @@ footer {
 }
 
 .para-out {
-  padding: 20px;
+  padding: 0px;
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 96%;
@@ -581,9 +581,9 @@ iframe {
 	color: white;	
 	font-weight: lighter;
 	font-size: 80%;
-	background: #3e3e3e;
-	margin-bottom: 0;
-	padding-bottom: 0;
+	background: #3e3e3e;	
+	margin: 0;
+	padding: 0;
 	
 }
 
@@ -624,16 +624,18 @@ iframe {
 
 .socialmediacontainer{
 	width: 100%;
-	margin: 40px 30px;
-	padding-bottom: 20px;
 }
 
-.socialmediaicon{
-	padding-right: 5px; 
-    height: 20px;
-    width: 20px;
+.socialmediaicon{ 
+	padding-right: 10px; 
+    height: 40px;
+    width: 40px;
     float: left;
     background-size: contain;
     color: #fff;
+   
+  	
 }
+
+
 

@@ -12,6 +12,7 @@
 	padding: 0px;
 	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
 	margin-right: 5px;
+	font-size: 80%;
 }
 
 
@@ -42,7 +43,6 @@
  
 .pricebtn{
 	width: 100%;
-	background: #7171ff;
 	border: 2px;
 	border-color: white;
 	margin-top: 1px;
@@ -59,13 +59,18 @@
 	border-radius: 5px;
 	color: white; 
 	padding: 6px 6px;
-	font-size: 17px;
+	font-size: 100%;
 	background: white;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 	
 }
 
-.knowmore:hover{
-	background: #93ffff;
+.knowmore:hover{	
+	background: #7171ff;
 	font-weight: bold;
+	
+}
+
+.priceitem .pull-left .fa-check {
+  color: #33B04A;
 }
