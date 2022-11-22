@@ -209,6 +209,21 @@
   flex-basis: 23%;
 }
 
+section .row .col  img {
+	height: 90%;
+	width: 90%;
+	object-fit: scale-down;
+	margin-left: 150px;
+
+}
+
+section .row .col  p {
+	
+	margin-left: 30px;
+	font-size: 120%;
+
+}
+
 /* start pixel break point for 1024*/
 @media (min-width: 1200px) {
   .call-outs-container {
@@ -343,6 +358,14 @@
   flex-basis: 46%;
 }
 
+section .row .col  img {
+	height: 90%;
+	width: 90%;
+	object-fit: scale-down;
+	margin-left: 10px;
+
+}
+
 }
 /* end pixel break point for 425 to 768*/
 
@@ -389,6 +412,14 @@
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 98%;
+}
+
+section .row .col  img {
+	height: 90%;
+	width: 90%;
+	object-fit: scale-down;
+	margin-left: 10px;
+
 }
 
 
