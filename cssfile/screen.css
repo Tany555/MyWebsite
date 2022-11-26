@@ -167,6 +167,13 @@ header {
 	.hide-larg {
 		display: unset;
 	}
+	.site-nav{
+	width: 100%;
+	display: block;	
+	position: fixed;
+	bottom: 0px;
+	background:  rgb(248, 249, 251); 
+	}
 	
 }
 
@@ -184,29 +191,31 @@ header p {
 /* Site Navigation */
 .site-nav {
 	margin-top: 0px;
+	margin-right: 10px;
+	background: aqua;
 }
 
-@media screen and (max-width: 415px){
+@media screen and (min-width: 1100px){
 	
-	.site-nav{
-	width: 100%;
-	display: block;
-	position: fixed;
-	bottom: 0px;
-	background:  rgb(248, 249, 251);
-	}
+	.site-nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
 	
 }
+
 
 .site-nav ul {
 	margin: 0;
 	padding: 0;
+	
 }
 
 .site-nav li {
 	list-style: none;
 	float: left;
-	margin-right: 20px;
+	margin-right: 20px;	
 	
 }
 
@@ -220,6 +229,8 @@ header p {
 	border-image-slice: 2;
 	border-style: solid;
 }
+
+
 
 @media screen and (max-width: 415px){
 	
