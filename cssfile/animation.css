@@ -98,6 +98,22 @@ transform: translateX(0);
 	animation-duration: 2s;
 }
 
+
+/********fade from left **********/
+@keyframes fade-left {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.active.fade-left {
+  animation: fade-left 2s ease-in;
+}
+
 /********fade from down **********/
 @keyframes fade-bottom {
   0% {

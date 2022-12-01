@@ -9,7 +9,8 @@ function reveal() {
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     } else {
-      reveals[i].classList.remove("active");
+	// this is to repeat animation every time we view the content
+     // reveals[i].classList.remove("active");
     }
   }
 }

@@ -16,6 +16,8 @@
 }
 
 
+
+
 .container  .priceitem h3{
 	display: block;
 	width: 100%;
@@ -28,6 +30,10 @@
 	line-height: 3;
 	
 } 
+
+.priceitem li{
+	text-align: left;
+}
 
 .h3price{
 	display: block;
@@ -73,4 +79,8 @@
 
 .priceitem .pull-left .fa-check {
   color: #33B04A;
+}
+
+.priceitem .pull-left .fa-x {
+  color: red;
 }
